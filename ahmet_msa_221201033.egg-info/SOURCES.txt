@@ -1,0 +1,7 @@
+setup.py
+ahmet_bioproject/__init__.py
+ahmet_bioproject/muscle_core.py
+ahmet_msa_221201033.egg-info/PKG-INFO
+ahmet_msa_221201033.egg-info/SOURCES.txt
+ahmet_msa_221201033.egg-info/dependency_links.txt
+ahmet_msa_221201033.egg-info/top_level.txt
