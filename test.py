@@ -1,12 +1,7 @@
+from ahmet_bioproject import my_muscle_msa
 
-from ahmet_bioproject.muscle_core import my_muscle_msa
+test_seqs = ["ATGC", "ATGCGT", "AGCGT"]
+sonuclar = my_muscle_msa(test_seqs)
 
-# Test etmek istediğimiz örnek DNA/RNA dizileri
-ornek_diziler = ["ATGC", "ATGCGT", "AGCGT"]
-
-print("Algoritma çalıştırılıyor...")
-sonuclar = my_muscle_msa(ornek_diziler)
-
-print("\nHizalanmış Diziler (Çıktı):")
-for s in sonuclar:
-    print(s)
+for seq in sonuclar:
+    print(seq)
