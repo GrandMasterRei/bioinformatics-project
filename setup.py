@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='ahmet_msa_221201033',
     version='0.1.0',
-    packages=find_packages(),
+    packages=['ahmet_bioproject'],
     description='Final projesi icin MUSCLE MSA algoritmasi',
     author='Ahmet',
 )

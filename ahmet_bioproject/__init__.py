@@ -1,0 +1,1 @@
+from .muscle_core import my_muscle_msa
