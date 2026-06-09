@@ -1,7 +1,5 @@
-from ahmet_bioproject import my_muscle_msa
+from ahmet_bioproject.muscle_core import my_muscle_msa
 
 test_seqs = ["ATGC", "ATGCGT", "AGCGT"]
-sonuclar = my_muscle_msa(test_seqs)
-
-for seq in sonuclar:
+for seq in my_muscle_msa(test_seqs):
     print(seq)
