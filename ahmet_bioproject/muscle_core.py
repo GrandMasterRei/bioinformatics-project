@@ -1,5 +1,5 @@
 def get_kmers(seq, k=2):
-    # Dışarıdan havalı tek satır yerine, standart öğrenci döngüsü
+
     kmers = set()
     for i in range(len(seq) - k + 1):
         parca = seq[i:i+k]
@@ -10,7 +10,6 @@ def calc_distance(seq1, seq2):
     k1 = get_kmers(seq1)
     k2 = get_kmers(seq2)
     
-    # Kesişim ve birleşimleri ayrı ayrı değişkenlere atadık ki anlatması kolay olsun
     kesisim_sayisi = len(k1.intersection(k2))
     birlesim_sayisi = len(k1.union(k2))
     
@@ -24,7 +23,6 @@ def needleman_wunsch(seq1, seq2, gp=-1, m=1, mm=-1):
     n = len(seq1)
     l = len(seq2)
     
-    # Matrisi standart döngü ile oluşturduk
     sc = []
     for _ in range(n + 1):
         satir = [0] * (l + 1)
@@ -87,8 +85,6 @@ def needleman_wunsch(seq1, seq2, gp=-1, m=1, mm=-1):
     return a1, a2
 
 def get_consensus(a1, a2):
-    # Yapay zekanın yazdığı en tehlikeli ve karmaşık tek satırlık kodu, 
-    # klasik If-Else öğrenci döngüsüne çevirdik.
     consensus = ""
     for i in range(len(a1)):
         harf1 = a1[i]
